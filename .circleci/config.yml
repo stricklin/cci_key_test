@@ -8,6 +8,8 @@ jobs:
        - add_ssh_keys:
           fingerprints:
             - "b9:be:44:71:f2:c5:8a:86:11:af:7a:e0:19:14:4b:1e"
+       - checkout # check out the code in the project directory
+       - run: echo "hello world" # run the `echo` command
 
 workflows:
   my-workflow:
